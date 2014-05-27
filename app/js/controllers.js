@@ -3,8 +3,8 @@
 /* Controllers */
 
 angular.module('ake.controllers', [])
-   .controller('HomeCtrl', ['$scope', 'syncData', '$rootScope', function($scope, syncData, $rootScope) {
-      syncData('syncedValue').$bind($scope, 'syncedValue');
+   .controller('HomeCtrl', ['$scope', '$rootScope', function($scope, syncData, $rootScope) {
+           
    }])
 
   .controller('ChatCtrl', ['$scope', 'syncData', 'loginService', '$rootScope', function($scope, syncData, loginService, $rootScope) {
