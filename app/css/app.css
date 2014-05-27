@@ -110,8 +110,14 @@ body {
     background: #999;
 }
 
+.header-container a,
+.footer-container a,
+.main aside a {
+    color: #fff;
+}
+
 .title {
-    color: white;
+    color: #fff;
 }
 
 button {
