@@ -2,19 +2,25 @@
    "rules": {
       ".read": false,
       ".write": false,
-      "syncedValue": {
-         ".read": true,
-         ".write": true,
-         ".validate": "newData.isString() && newData.val().length <= 100"
-      },
       "messages": {
          ".read": "auth !== null",
          "$message": {
-            ".write": true,
+            // Modifying an existing chat message is not allowed.
+            ".write": "!data.exists()",
             ".validate": "newData.hasChildren(['text'])",
             "text": {
                ".validate": "newData.isString() && newData.val().length <= 1000"
             },
+            "author": {
+               ".validate": "newData.val() == auth.uid"
+            },
+            "by": {
+               ".validate": "newData.isString()"
+            },
+            "timestamp": {
+               ".validate": "newData.isNumber()"
+            },
+            // invalid if other fields included
             "$other": {
                ".validate": false
             }
@@ -30,6 +36,7 @@
             "email": {
                ".validate": "newData.isString() && newData.val().length <= 2000"
             },
+            // invalid if other fields included
             "$other": {
                ".validate": false
             }
