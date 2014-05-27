@@ -1,0 +1,24 @@
+
+<h2>Login</h2>
+
+<form>
+    <label>
+        <span>email</span>
+        <input type="text" data-ng-model="email" />
+    </label>
+    <label>
+        <span>password</span>
+        <input type="password" data-ng-model="pass" />
+    </label>
+    <label data-ng-cloak data-ng-show="createMode">
+        <span>confirm pass</span>
+        <input type="password" data-ng-model="confirm" />
+    </label>
+    <button data-ng-click="login()" data-ng-hide="createMode">Log In</button>
+    <button data-ng-click="createMode = true" data-ng-hide="createMode">Register</button>
+    <button data-ng-cloak data-ng-show="createMode" data-ng-click="createAccount()">Create Account</button>
+    <button data-ng-cloak data-ng-show="createMode" data-ng-click="createMode = false">Cancel</button>
+
+    <p data-ng-show="err" class="error">{{err}}</p>
+</form>
+<p></p>

@@ -1,0 +1,16 @@
+<h2>Chat <span data-ng-show-auth="'login'">(as {{ user.name }})</span></h2>
+<div data-ng-show-auth="'login'" data-ng-cloak>
+    <form class="chat-pane">
+      <input placeholder="Message..." data-ng-model="newMessage">
+      <button type="submit" data-ng-click="addMessage()">send</button>
+    </form>
+
+    <ul id="messages" data-ng-show="messages">
+        <li data-ng-repeat="message in messages | orderByPriority | reverse" class="chat-item">
+            <p>{{ message.text}}</p>
+            <span>({{ message.by }} - {{ message.timestamp | date: 'HH:mm:ss - dd/mm/yy' }})</span>
+        </li>
+    </ul>
+</div>
+
+<p data-ng-show-auth="['logout', 'error']" data-ng-cloak>You must be logged in to chat. Go to the <a href="#/login">login page</a>.</p>

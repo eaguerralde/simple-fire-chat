@@ -1,0 +1,594 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #333;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+a {
+    color: #996699;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+dl, menu, ol, ul{
+    padding-left: 20px;
+}
+
+ul ul{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+li {
+    margin-bottom: .2em;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+body {
+    font: 16px/26px Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+/* ===================
+    ALL: Orange Theme
+   =================== */
+
+.header-container {
+    border-bottom: 20px solid #336699;
+}
+
+.footer-container,
+.main aside {
+    border-top: 20px solid #336699;
+}
+
+.header-container,
+.footer-container,
+.main aside {
+    background: #999;
+}
+
+.title {
+    color: white;
+}
+
+button {
+    padding: .6em 1em;
+    border: none;
+    background: #996699;
+    color: #fff;
+    line-height: 1.3em;
+}
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+
+.menu-container {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+nav {
+    margin: 0 auto;
+}
+
+nav ul {
+    float: right;
+    display: table;
+    margin: 0;
+    padding: 0;
+    border-spacing: 5px;
+    background-color: #999;
+}
+
+nav a, 
+nav span {
+    display: block;
+/*    margin-bottom: 10px;*/
+    padding: 15px 8px;
+
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+
+    color: white;
+    background: #996699;
+}
+
+nav span,
+nav a:hover,
+nav a:visited {
+    color: white;
+}
+
+nav span:hover,
+nav a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+.main-container{
+    min-height: 200px;
+}
+
+.main {
+    display: block;
+    padding: 30px 0;
+}
+
+.main content {
+    display: block;
+    font-size: 2em;
+}
+
+.main aside {
+    display: block;
+    color: white;
+    padding: 0px 5% 10px;
+}
+
+.footer-container footer {
+    color: white;
+    padding: 20px 0;
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+
+.hide {
+   display: none;
+}
+
+
+p.status {
+   color: #ff880f;
+}
+
+p.status.good, p.good {
+   color: green;
+}
+
+form label {
+   display: block;
+   margin: 15px 0;
+}
+
+form label span {
+   display: block;
+   font-weight: bold;
+}
+
+.error {
+   color: #ff880f;
+}
+
+fieldset {
+   float: left;
+   margin-right: 25px;
+   padding: 25px;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
+}
+
+[data-ng-cloak].splash, .ng-cloak.splash {
+    display: block !important;
+}
+.splash {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    z-index: 10;
+    background-color: #996699;
+}
+.splash.loader {
+    opacity: 1;
+    background-color: transparent;
+}
+.splash.loader p {
+    display: table;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+}
+
+.chat-pane input {
+    width: 81%;
+    padding: .5em 1%;
+}
+.chat-pane button {
+    width: 15%
+}
+
+#messages {
+    display: table;
+    width: 100%;
+    border-spacing: 2px;
+    padding: 0;
+}
+
+#messages li {
+    display: table-row;
+    background: #eee;
+}
+
+#messages p {
+    padding: 0 6px;
+    margin: 0;
+}
+
+#messages span {
+    padding: 0 6px;
+    margin: 0;
+    font-size: .7em;
+    color: #777;
+}
+
+/* animations */
+
+.chat-item.ng-enter, .chat-item.ng-move {
+  -webkit-transition:0.5s linear all;
+  -moz-transition:0.5s linear all;
+  -o-transition:0.5s linear all;
+  transition:0.5s linear all;
+  opacity:0;
+}
+
+.chat-item.ng-enter.ng-enter-active,
+.chat-item.ng-move.ng-move-active {
+  opacity:1;
+}
+
+.chat-item.ng-leave {
+  -webkit-animation:0.5s my_animation;
+  -moz-animation:0.5s my_animation;
+  -o-animation:0.5s my_animation;
+  animation:0.5s my_animation;
+}
+
+@keyframes my_animation {
+  from { opacity:1; }
+  to { opacity:0; }
+}
+
+@-webkit-keyframes my_animation {
+  from { opacity:1; }
+  to { opacity:0; }
+}
+
+@-moz-keyframes my_animation {
+  from { opacity:1; }
+  to { opacity:0; }
+}
+
+@-o-keyframes my_animation {
+  from { opacity:1; }
+  to { opacity:0; }
+}
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+
+    nav a {
+/*        float: left;
+        width: 27%;
+        margin: 0 1.7%;
+        padding: 25px 2%;
+        margin-bottom: 0;*/
+    }
+
+    nav li:first-child a {
+        margin-left: 0;
+    }
+
+    nav li:last-child a {
+        margin-right: 0;
+    }
+
+/* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+
+    nav ul li {
+/*        display: inline;*/
+        display: table-cell;
+    }
+
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+/* ====================
+    WIDE: CSS3 Effects
+   ==================== */
+
+    .header-container,
+    .main aside {
+        -webkit-box-shadow: 0 5px 10px #aaa;
+           -moz-box-shadow: 0 5px 10px #aaa;
+                box-shadow: 0 5px 10px #aaa;
+    }
+
+/* ============
+    WIDE: Menu
+   ============ */
+
+    .title {
+        float: left;
+    }
+
+    nav {
+        right: 5%;
+    }
+
+/* ============
+    WIDE: Main
+   ============ */
+    
+    .main {
+        display: table;
+    }
+    
+    .main .content {
+        display: table-cell;
+        width: 57%;
+        padding-right: 2em;
+    }
+
+    .main aside {
+        display: table-cell;
+        width: 50%;
+    }
+    
+
+
+.main content {
+}
+
+.main aside {
+}
+    
+}
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    .wrapper {
+        width: 1026px; /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

@@ -1,0 +1,63 @@
+
+<h2>Account</h2>
+
+<form>
+    <fieldset>
+        <legend>Profile</legend>
+
+        <label>
+            <span>Name:</span>
+            <input type="text" name="name" data-ng-model="user.name"/>
+        </label>
+
+        <label>
+            <span>Email:</span>
+            <input type="text" name="name" data-ng-model="user.email"/>
+        </label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Change Password</legend>
+
+        <label>
+            <span>Old Password:</span>
+            <input type="password" data-ng-keypress="reset()" data-ng-model="oldpass"/>
+        </label>
+
+        <label>
+            <span>New Password:</span>
+            <input type="password" data-ng-keypress="reset()" data-ng-model="newpass"/>
+        </label>
+
+        <label>
+            <span>Confirm Password:</span>
+            <input type="password" data-ng-keypress="reset()" data-ng-model="confirm"/>
+        </label>
+
+        <button data-ng-click="updatePassword()">update password</button>
+
+        <p class="error" data-ng-show="err">{{err}}</p>
+        <p class="good" data-ng-show="msg">{{msg}}</p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Change Email</legend>
+
+        <label>
+            <span>New Email:</span>
+            <input type="text" data-ng-keypress="reset()" data-ng-model="newemail"/>
+        </label>
+
+        <label>
+            <span>Password:</span>
+            <input type="password" data-ng-keypress="reset()" data-ng-model="pass"/>
+        </label>
+
+        <button data-ng-click="updateEmail()">update email</button>
+
+        <p class="error" data-ng-show="emailerr">{{emailerr}}</p>
+        <p class="good" data-ng-show="emailmsg">{{emailmsg}}</p>
+    </fieldset>
+</form>
+
+<!--<button data-ng-click="logout()">Log Out</button>-->
