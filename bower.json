@@ -1,0 +1,24 @@
+{
+  "name": "simple-fire-chat",
+  "version": "0.0.0",
+  "homepage": "https://github.com/eaguerralde/simple-fire-chat",
+  "authors": [
+    "Eduardo Aguerralde <eduardo@aguerralde.com>"
+  ],
+  "description": "A simple chat that uses angular to build the UI and firebase as BE",
+  "main": "app/index.html",
+  "keywords": [
+    "firebase",
+    "angular",
+    "chat"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
